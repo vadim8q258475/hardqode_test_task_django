@@ -1,0 +1,28 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E262" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="todo_app.main.models.ToDo.*" />
+          <option value="app.main.models.Object.objects" />
+          <option value="shop.main.models.Product.objects" />
+          <option value="shop.main.models.Cart.objects" />
+          <option value="shop.main.models.UserOrder.objects" />
+          <option value="shop.main.models.Promo.objects" />
+          <option value="shop.main.models.Certificate.objects" />
+          <option value="shop.main.models.CartProduct.objects" />
+          <option value="shop.main.models.Cloth.objects" />
+          <option value="shop.main.models.OrderProduct.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

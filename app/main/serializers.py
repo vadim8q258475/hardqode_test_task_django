@@ -19,6 +19,7 @@ class LessonSerializer(serializers.ModelSerializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     lessons_quantity = serializers.SerializerMethodField()
+    creator = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
@@ -34,6 +35,8 @@ class ProductSerializer(serializers.ModelSerializer):
         )
         return length
 
+    def get_creator(self, obj):
+        return obj.creator.username
 
 class ProductStatisticsSerializer(serializers.Serializer):
 

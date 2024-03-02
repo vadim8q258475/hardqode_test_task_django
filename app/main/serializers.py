@@ -38,6 +38,7 @@ class ProductSerializer(serializers.ModelSerializer):
     def get_creator(self, obj):
         return obj.creator.username
 
+
 class ProductStatisticsSerializer(serializers.Serializer):
 
     students_qty = serializers.SerializerMethodField()
